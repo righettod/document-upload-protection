@@ -1,5 +1,5 @@
 # Description
-POC of an JEE web filter in order to protect an document upload application feature against "malicious" document submition.
+POC of an JEE web filter in order to protect an document upload application feature against "malicious" document submission.
 
 # Status
 
@@ -11,7 +11,7 @@ Before to launch a build or execution of the POC, use the script **install-non-m
 
 # Context
 
-In web application, when we expect working document coming from format Microsoft Office or PDF from our users, we can expose our application to submition of document that we can categorize as "malicious".
+In web application, when we expect working document coming from format Microsoft Office or PDF from our users, we can expose our application to submission of document that we can categorize as "malicious".
 
 We use the term "malicious" here to refer to document that embed "malicious code" that will be executed when a user will open the document with the associated reader (Word, Excel, Acrobat Reader...).
 
@@ -41,7 +41,7 @@ The reason why Aspose API have been used into this POC are the following:
 
 * The open source API JEXCELAPI for XLS native format is not often maintained (last publishing on Maven repository date from 27-Nov-2012).
 
-* Trial version of the APIs can be used for detection only and it's seems that there not license limitation about this type of specific usage (see links and don't hesitate to ping me if i'm wrong).
+* Trial version of the APIs can be used for detection only and it's seems that there not license limitation about this type of specific usage (see links and don't hesitate to ping me if i'm wrong  :smiley: ).
 
 
 # Links
