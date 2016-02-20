@@ -9,6 +9,10 @@ POC of an JEE web filter in order to protect an document upload application feat
 
 Before to launch a build or execution of the POC, use the script **install-non-maven-deps.bat** to install dependencies into your local Maven cache.
 
+# Run the POC
+
+Use maven command `mvn tomcat7:run-war`
+
 # Context
 
 In web application, when we expect working document coming from format Microsoft Office or PDF from our users, we can expose our application to submission of document that we can categorize as "malicious".

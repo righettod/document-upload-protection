@@ -5,6 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.aspose.cells.FileFormatInfo;
 import com.aspose.cells.FileFormatUtil;
 import com.aspose.cells.Workbook;
@@ -15,6 +18,9 @@ import com.aspose.cells.Workbook;
  *
  */
 public class ExcelDetectorImpl implements Detector {
+
+	/** LOGGER */
+	private static final Logger LOG = LoggerFactory.getLogger(ExcelDetectorImpl.class);
 
 	/**
 	 * List of allowed Excel format<br>
@@ -43,11 +49,9 @@ public class ExcelDetectorImpl implements Detector {
 					safeState = !book.hasMacro();
 				}
 			}
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 			safeState = false;
-			// Not clean way of logging but it's a POC :)
-			e.printStackTrace();
+			LOG.warn("Error during Excel file analysis !", e);
 		}
 		return safeState;
 	}

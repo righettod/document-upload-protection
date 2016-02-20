@@ -12,7 +12,7 @@ import org.junit.Test;
  */
 public class ExcelDetectorImplTest {
 
-	/** Home directory of the Word samples */
+	/** Home directory of the Excel samples */
 	private static final File SAMPLES_DIRECTORY = new File("src/test/resources/excel");
 
 	/** Tested class instance */
@@ -29,7 +29,7 @@ public class ExcelDetectorImplTest {
 		// Prepare test
 		File sample = new File(SAMPLES_DIRECTORY, "test-without-macro.xls");
 		// Run test
-		boolean safeState = this.victim.isSafe(sample);
+		boolean safeState = victim.isSafe(sample);
 		// Validate test
 		Assert.assertTrue(safeState);
 	}
@@ -45,7 +45,7 @@ public class ExcelDetectorImplTest {
 		// Prepare test
 		File sample = new File(SAMPLES_DIRECTORY, "test-without-macro.xlsb");
 		// Run test
-		boolean safeState = this.victim.isSafe(sample);
+		boolean safeState = victim.isSafe(sample);
 		// Validate test
 		Assert.assertTrue(safeState);
 	}
@@ -61,7 +61,7 @@ public class ExcelDetectorImplTest {
 		// Prepare test
 		File sample = new File(SAMPLES_DIRECTORY, "test-without-macro.xlsm");
 		// Run test
-		boolean safeState = this.victim.isSafe(sample);
+		boolean safeState = victim.isSafe(sample);
 		// Validate test
 		Assert.assertTrue(safeState);
 	}
@@ -77,7 +77,7 @@ public class ExcelDetectorImplTest {
 		// Prepare test
 		File sample = new File(SAMPLES_DIRECTORY, "test-without-macro.xlt");
 		// Run test
-		boolean safeState = this.victim.isSafe(sample);
+		boolean safeState = victim.isSafe(sample);
 		// Validate test
 		Assert.assertTrue(safeState);
 	}
@@ -93,7 +93,7 @@ public class ExcelDetectorImplTest {
 		// Prepare test
 		File sample = new File(SAMPLES_DIRECTORY, "test-without-macro.xltm");
 		// Run test
-		boolean safeState = this.victim.isSafe(sample);
+		boolean safeState = victim.isSafe(sample);
 		// Validate test
 		Assert.assertTrue(safeState);
 	}
@@ -109,7 +109,7 @@ public class ExcelDetectorImplTest {
 		// Prepare test
 		File sample = new File(SAMPLES_DIRECTORY, "test-with-macro.xls");
 		// Run test
-		boolean safeState = this.victim.isSafe(sample);
+		boolean safeState = victim.isSafe(sample);
 		// Validate test
 		Assert.assertFalse(safeState);
 	}
@@ -125,7 +125,7 @@ public class ExcelDetectorImplTest {
 		// Prepare test
 		File sample = new File(SAMPLES_DIRECTORY, "test-with-macro.xlsb");
 		// Run test
-		boolean safeState = this.victim.isSafe(sample);
+		boolean safeState = victim.isSafe(sample);
 		// Validate test
 		Assert.assertFalse(safeState);
 	}
@@ -141,7 +141,7 @@ public class ExcelDetectorImplTest {
 		// Prepare test
 		File sample = new File(SAMPLES_DIRECTORY, "test-with-macro.xlsm");
 		// Run test
-		boolean safeState = this.victim.isSafe(sample);
+		boolean safeState = victim.isSafe(sample);
 		// Validate test
 		Assert.assertFalse(safeState);
 	}
@@ -157,7 +157,7 @@ public class ExcelDetectorImplTest {
 		// Prepare test
 		File sample = new File(SAMPLES_DIRECTORY, "test-with-macro.xlt");
 		// Run test
-		boolean safeState = this.victim.isSafe(sample);
+		boolean safeState = victim.isSafe(sample);
 		// Validate test
 		Assert.assertFalse(safeState);
 	}
@@ -173,7 +173,7 @@ public class ExcelDetectorImplTest {
 		// Prepare test
 		File sample = new File(SAMPLES_DIRECTORY, "test-with-macro.xltm");
 		// Run test
-		boolean safeState = this.victim.isSafe(sample);
+		boolean safeState = victim.isSafe(sample);
 		// Validate test
 		Assert.assertFalse(safeState);
 	}

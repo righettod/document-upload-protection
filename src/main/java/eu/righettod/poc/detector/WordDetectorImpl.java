@@ -5,6 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.aspose.words.Document;
 import com.aspose.words.FileFormatInfo;
 import com.aspose.words.FileFormatUtil;
@@ -16,6 +19,9 @@ import com.aspose.words.FileFormatUtil;
  */
 public class WordDetectorImpl implements Detector {
 
+	/** LOGGER */
+	private static final Logger LOG = LoggerFactory.getLogger(WordDetectorImpl.class);
+
 	/**
 	 * List of allowed Word format (WML = Word ML (Word 2003 XML)).<br>
 	 * Allow also DOCM because it can exists without macro inside.<br>
@@ -23,7 +29,8 @@ public class WordDetectorImpl implements Detector {
 	 * We reject MHTML file because:<br>
 	 * <ul>
 	 * <li>API cannot detect macro into this format</li>
-	 * <li>Is not normal to use this format to represent a Word file (there plenty of others supported format)</li>
+	 * <li>Is not normal to use this format to represent a Word file (there
+	 * plenty of others supported format)</li>
 	 * </ul>
 	 */
 	private static final List<String> ALLOWED_FORMAT = Arrays.asList(new String[] { "doc", "docx", "docm", "wml", "dot", "dotm" });
@@ -48,11 +55,9 @@ public class WordDetectorImpl implements Detector {
 					safeState = !document.hasMacros();
 				}
 			}
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 			safeState = false;
-			// Not clean way of logging but it's a POC :)
-			e.printStackTrace();
+			LOG.warn("Error during Word file analysis !", e);
 		}
 		return safeState;
 	}

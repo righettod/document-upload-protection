@@ -2,6 +2,9 @@ package eu.righettod.poc.detector;
 
 import java.io.File;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.itextpdf.text.pdf.PdfArray;
 import com.itextpdf.text.pdf.PdfDictionary;
 import com.itextpdf.text.pdf.PdfName;
@@ -14,6 +17,9 @@ import com.itextpdf.text.pdf.PdfReader;
  */
 public class PdfDetectorImpl implements Detector {
 
+	/** LOGGER */
+	private static final Logger LOG = LoggerFactory.getLogger(PdfDetectorImpl.class);
+
 	/**
 	 * {@inheritDoc}
 	 *
@@ -25,7 +31,8 @@ public class PdfDetectorImpl implements Detector {
 		try {
 			if ((f != null) && f.exists()) {
 				// Load stream in PDF parser
-				// If the stream is not a PDF then exception will be throwed here and safe state will be set to FALSE
+				// If the stream is not a PDF then exception will be throwed
+				// here and safe state will be set to FALSE
 				PdfReader reader = new PdfReader(f.getAbsolutePath());
 				// Check 1:
 				// Detect if the document contains any JavaScript code
@@ -44,11 +51,9 @@ public class PdfDetectorImpl implements Detector {
 					safeState = ((namesArray == null) || namesArray.isEmpty());
 				}
 			}
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 			safeState = false;
-			// Not clean way of logging but it's a POC :)
-			e.printStackTrace();
+			LOG.warn("Error during Pdf file analysis !", e);
 		}
 		return safeState;
 	}
