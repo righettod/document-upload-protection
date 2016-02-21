@@ -1,10 +1,6 @@
 # Description
 POC in order to protect an document upload application feature against "malicious" document submission.
 
-# Status
-
-**Under active implementation**
-
 # Note about dependencies not present into Maven repositories
 
 Before to launch a build or execution of the POC, use the script **install-non-maven-deps.bat** to install dependencies into your local Maven cache.
