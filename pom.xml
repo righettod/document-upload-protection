@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>eu.righettod</groupId>
-	<artifactId>poc-document-upload-filter-protection</artifactId>
+	<artifactId>poc-document-upload-protection</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<description>POC of an JEE web filter in order to protect an document upload application feature against "malicious" document submition</description>
+	<description>POC in order to protect an document upload application feature against "malicious" document submission</description>
 	<dependencies>
 		<dependency>
 			<groupId>com.itextpdf</groupId>
@@ -57,8 +57,6 @@
 				<configuration>
 					<port>9090</port>
 					<path>/</path>
-					<systemProperties>
-					</systemProperties>
 				</configuration>
 			</plugin>
 		</plugins>

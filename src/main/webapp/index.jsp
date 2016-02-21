@@ -12,7 +12,7 @@
 			<option value="EXCEL">Microsoft Office Excel</option>
 			<option value="PDF">Adobe PDF</option>
 		</select><br>
-		Select file to upload: <input type="file" name="fileToUpload" id="fileToUpload"><br><input type="submit" value="Upload file" name="submit">
+		Select file to upload: <input type="file" name="fileContent" id="fileContent"><br><input type="submit" value="Upload file" name="submit">
 	</form>
 </body>
 </html>

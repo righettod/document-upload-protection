@@ -1,5 +1,5 @@
 # Description
-POC of an JEE web filter in order to protect an document upload application feature against "malicious" document submission.
+POC in order to protect an document upload application feature against "malicious" document submission.
 
 # Status
 
@@ -11,7 +11,13 @@ Before to launch a build or execution of the POC, use the script **install-non-m
 
 # Run the POC
 
-Use maven command `mvn -DskipTests tomcat7:run-war`
+1) Use maven command to run the web container:
+
+`mvn -DskipTests tomcat7:run-war`
+
+2) Use the following URL to acces to upload form:
+
+http://localhost:9090
 
 # Context
 
