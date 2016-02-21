@@ -5,8 +5,14 @@
 <title>POC</title>
 </head>
 <body>
-	<form action="${pageContext.request.contextPath}/upload" method="post" enctype="multipart/form-data">
-		Select file to upload: <input type="file" name="fileToUpload" id="fileToUpload"> <input type="submit" value="Upload Image" name="submit">
+	<form action="/upload" method="post" enctype="multipart/form-data">
+		File format:
+		<select id="fileType" name="fileType">
+			<option value="WORD">Microsoft Office Word</option>
+			<option value="EXCEL">Microsoft Office Excel</option>
+			<option value="PDF">Adobe PDF</option>
+		</select><br>
+		Select file to upload: <input type="file" name="fileToUpload" id="fileToUpload"><br><input type="submit" value="Upload file" name="submit">
 	</form>
 </body>
 </html>

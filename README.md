@@ -11,7 +11,7 @@ Before to launch a build or execution of the POC, use the script **install-non-m
 
 # Run the POC
 
-Use maven command `mvn tomcat7:run-war`
+Use maven command `mvn -DskipTests tomcat7:run-war`
 
 # Context
 
