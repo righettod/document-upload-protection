@@ -20,10 +20,10 @@ import javax.xml.bind.DatatypeConverter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import eu.righettod.poc.detector.Detector;
-import eu.righettod.poc.detector.ExcelDetectorImpl;
-import eu.righettod.poc.detector.PdfDetectorImpl;
-import eu.righettod.poc.detector.WordDetectorImpl;
+import eu.righettod.poc.detector.DocumentDetector;
+import eu.righettod.poc.detector.ExcelDocumentDetectorImpl;
+import eu.righettod.poc.detector.PdfDocumentDetectorImpl;
+import eu.righettod.poc.detector.WordDocumentDetectorImpl;
 
 /**
  * Servlet to receive the uploaded file.<br>
@@ -73,23 +73,23 @@ public class DocumentUpload extends HttpServlet {
 
 			/* Step 2: Initialize a detector for the target file type and perform validation */
 			// Instanciate the dedicated detector implementation
-			Detector detector = null;
+			DocumentDetector documentDetector = null;
 			switch (fileType) {
 			case "PDF":
-				detector = new PdfDetectorImpl();
+				documentDetector = new PdfDocumentDetectorImpl();
 				break;
 			case "WORD":
-				detector = new WordDetectorImpl();
+				documentDetector = new WordDocumentDetectorImpl();
 				break;
 			case "EXCEL":
-				detector = new ExcelDetectorImpl();
+				documentDetector = new ExcelDocumentDetectorImpl();
 				break;
 			default:
 				throw new IllegalArgumentException("Unknow file type specified !");
 			}
 
 			// Apply detection
-			boolean isSafe = detector.isSafe(tmpFile);
+			boolean isSafe = documentDetector.isSafe(tmpFile);
 
 			/* Step 3 : Take decision based on sfa status detected */
 			// Take action is the file is not safe
