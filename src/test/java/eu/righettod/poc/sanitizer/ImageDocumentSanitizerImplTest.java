@@ -107,6 +107,29 @@ public class ImageDocumentSanitizerImplTest {
 	}
 
 	/**
+	 * Test case for GIF image containing code into one his content.<br>
+	 * Here program must successfully make it safe.
+	 * 
+	 * @throws Exception
+	 * 
+	 */
+	@Test
+	public void testGifWithCodeInContent() throws Exception {
+		// Prepare test
+		File sample = new File(SAMPLES_DIRECTORY, "test-php-inserted-into-img.gif");
+		File workingSample = new File(WORKING_DIRECTORY, "test-php-inserted-into-img.tmp");
+		Files.copy(sample.toPath(), workingSample.toPath(), StandardCopyOption.REPLACE_EXISTING);
+		String sampleContent = new String(Files.readAllBytes(workingSample.toPath())).toLowerCase(Locale.US);
+		Assert.assertTrue(sampleContent.contains("phpinfo()"));
+		// Run test
+		boolean safeState = this.victim.madeSafe(workingSample);
+		// Validate test
+		sampleContent = new String(Files.readAllBytes(workingSample.toPath())).toLowerCase(Locale.US);
+		Assert.assertFalse(sampleContent.contains("phpinfo()"));
+		Assert.assertTrue(safeState);
+	}
+
+	/**
 	 * Utility method to search a string into all the EXIF tags of an image file.
 	 * 
 	 * @param image Source image file

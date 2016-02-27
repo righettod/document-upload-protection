@@ -66,7 +66,8 @@ public class ImageDocumentSanitizerImpl implements DocumentSanitizer {
 
 				// Save image and detect the image format for provided file
 				String imageFormat = Opener.getFileFormat(f.getAbsolutePath());
-				IJ.saveAs(new ImagePlus("", initialSizedImageProcessor), imageFormat, f.getAbsolutePath());
+				ImagePlus finalImg = new ImagePlus("", initialSizedImageProcessor);
+				IJ.saveAs(finalImg, imageFormat, f.getAbsolutePath());
 
 				// IJ will save the file with the extension associated to the image format (ex: jpg or png)
 				// but, as the provided input file can have any extension (we do not use it to detect image format),
@@ -77,7 +78,7 @@ public class ImageDocumentSanitizerImpl implements DocumentSanitizer {
 				String newSavedFileName = tmp.substring(0, tmp.lastIndexOf(".") + 1) + imageFormat;
 				File newSavedFile = new File(f.getParentFile(), newSavedFileName);
 				if (newSavedFile.exists() && !f.getAbsolutePath().equalsIgnoreCase(newSavedFile.getAbsolutePath())) {
-					// Overwrite content of the input file with the content of the new save file
+					// Overwrite content of the input file with the content of the new saved file
 					Files.copy(newSavedFile.toPath(), f.toPath(), StandardCopyOption.REPLACE_EXISTING);
 					// Remove file saved by IJ
 					newSavedFile.delete();

@@ -50,7 +50,7 @@ We will focus our work on the following formats because it's the formats that ar
 
 * Adobe Pdf document,
 
-* Image document (formats PNG, GIF, JPEG).
+* Image document (formats supported by the IJ API: http://rsb.info.nih.gov/ij/developer/api).
 
 # Note on Word/Excel API
 
@@ -68,10 +68,16 @@ The reason why Aspose API have been used into this POC are the following:
 
 * Add detection of OLE packages into Word / Excel documents.
 
-# Links
+# Information links
 
 * http://www.aspose.com/community/forums/thread/335727/what-are-the-trial-limitation-of-aspose.words.net.aspx
 
 * http://www.aspose.com/docs/display/wordsreportingservices/Evaluation+Version+Limitations
 
 * https://www.greyhathacker.net/?p=872
+
+# Online tools links
+
+* http://regex.info/exif.cgi
+
+* http://thexifer.net/
