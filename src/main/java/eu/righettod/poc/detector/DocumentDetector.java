@@ -17,7 +17,7 @@ public interface DocumentDetector {
 	 * 
 	 * @param f File to validate
 	 * 
-	 * @return TRUE only the file fill the 2 rules above
+	 * @return TRUE only if the file fill the 2 rules above
 	 */
 	boolean isSafe(File f);
 
