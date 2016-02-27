@@ -99,6 +99,22 @@ public class ExcelDocumentDetectorImplTest {
 	}
 
 	/**
+	 * Test case for XLSM format with macro renamed to XLS.
+	 * 
+	 * @throws IOException
+	 * 
+	 */
+	@Test
+	public void testUnSafeXLSMDocumentRenamedToXLS() throws IOException {
+		// Prepare test
+		File sample = new File(SAMPLES_DIRECTORY, "test-with-macro-xlsm-renamed-to-xls.xls");
+		// Run test
+		boolean safeState = this.victim.isSafe(sample);
+		// Validate test
+		Assert.assertFalse(safeState);
+	}
+
+	/**
 	 * Test case for XLS format with macro.
 	 * 
 	 * @throws IOException
