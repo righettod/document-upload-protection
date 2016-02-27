@@ -10,7 +10,10 @@ import org.slf4j.LoggerFactory;
 
 import com.aspose.cells.FileFormatInfo;
 import com.aspose.cells.FileFormatUtil;
+import com.aspose.cells.MsoDrawingType;
+import com.aspose.cells.OleObject;
 import com.aspose.cells.Workbook;
+import com.aspose.cells.Worksheet;
 
 /**
  * Implementation of the detector for Microsoft Excel workbook.
@@ -47,9 +50,30 @@ public class ExcelDocumentDetectorImpl implements DocumentDetector {
 					Workbook book = new Workbook(f.getAbsolutePath());
 					// Get safe state from Macro presence
 					safeState = !book.hasMacro();
+					// If document is safe then we pass to OLE objects analysis
+					if (safeState) {
+						// Search OLE objects in all workbook sheets
+						Worksheet sheet = null;
+						OleObject oleObject = null;
+						int totalOLEObjectCount = 0;
+						for (int i = 0; i < book.getWorksheets().getCount(); i++) {
+							sheet = book.getWorksheets().get(i);
+							for (int j = 0; j < sheet.getOleObjects().getCount(); j++) {
+								oleObject = sheet.getOleObjects().get(j);
+								if (oleObject.getMsoDrawingType() == MsoDrawingType.OLE_OBJECT) {
+									totalOLEObjectCount++;
+								}
+							}
+						}
+						// Update safe status flag according to number of OLE object found
+						if (totalOLEObjectCount != 0) {
+							safeState = false;
+						}
+					}
 				}
 			}
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 			safeState = false;
 			LOG.warn("Error during Excel file analysis !", e);
 		}

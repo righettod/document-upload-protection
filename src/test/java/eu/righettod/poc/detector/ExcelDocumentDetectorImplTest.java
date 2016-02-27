@@ -178,4 +178,100 @@ public class ExcelDocumentDetectorImplTest {
 		Assert.assertFalse(safeState);
 	}
 
+	/**
+	 * Test case for XLS format with OLE object.
+	 * 
+	 * @throws IOException
+	 * 
+	 */
+	@Test
+	public void testUnSafeXLSDocumentWithOLE() throws IOException {
+		// Prepare test
+		File sample = new File(SAMPLES_DIRECTORY, "test-with-ole-object.xls");
+		// Run test
+		boolean safeState = this.victim.isSafe(sample);
+		// Validate test
+		Assert.assertFalse(safeState);
+	}
+
+	/**
+	 * Test case for XLSB format with OLE object.
+	 * 
+	 * @throws IOException
+	 * 
+	 */
+	@Test
+	public void testUnSafeXLSBDocumentWithOLE() throws IOException {
+		// Prepare test
+		File sample = new File(SAMPLES_DIRECTORY, "test-with-ole-object.xlsb");
+		// Run test
+		boolean safeState = this.victim.isSafe(sample);
+		// Validate test
+		Assert.assertFalse(safeState);
+	}
+
+	/**
+	 * Test case for XLSM format with OLE object.
+	 * 
+	 * @throws IOException
+	 * 
+	 */
+	@Test
+	public void testUnSafeXLSMDocumentWithOLE() throws IOException {
+		// Prepare test
+		File sample = new File(SAMPLES_DIRECTORY, "test-with-ole-object.xlsm");
+		// Run test
+		boolean safeState = this.victim.isSafe(sample);
+		// Validate test
+		Assert.assertFalse(safeState);
+	}
+
+	/**
+	 * Test case for XLSX format with OLE object.
+	 * 
+	 * @throws IOException
+	 * 
+	 */
+	@Test
+	public void testUnSafeXLSXDocumentWithOLE() throws IOException {
+		// Prepare test
+		File sample = new File(SAMPLES_DIRECTORY, "test-with-ole-object.xlsx");
+		// Run test
+		boolean safeState = this.victim.isSafe(sample);
+		// Validate test
+		Assert.assertFalse(safeState);
+	}
+
+	/**
+	 * Test case for XLT format with OLE object.
+	 * 
+	 * @throws IOException
+	 * 
+	 */
+	@Test
+	public void testUnSafeXLTDocumentWithOLE() throws IOException {
+		// Prepare test
+		File sample = new File(SAMPLES_DIRECTORY, "test-with-ole-object.xlt");
+		// Run test
+		boolean safeState = this.victim.isSafe(sample);
+		// Validate test
+		Assert.assertFalse(safeState);
+	}
+
+	/**
+	 * Test case for XLTX format with OLE object.
+	 * 
+	 * @throws IOException
+	 * 
+	 */
+	@Test
+	public void testUnSafeXLTXDocumentWithOLE() throws IOException {
+		// Prepare test
+		File sample = new File(SAMPLES_DIRECTORY, "test-with-ole-object.xltx");
+		// Run test
+		boolean safeState = this.victim.isSafe(sample);
+		// Validate test
+		Assert.assertFalse(safeState);
+	}
+
 }
