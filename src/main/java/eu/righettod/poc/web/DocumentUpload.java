@@ -24,10 +24,13 @@ import eu.righettod.poc.detector.DocumentDetector;
 import eu.righettod.poc.detector.ExcelDocumentDetectorImpl;
 import eu.righettod.poc.detector.PdfDocumentDetectorImpl;
 import eu.righettod.poc.detector.WordDocumentDetectorImpl;
+import eu.righettod.poc.sanitizer.DocumentSanitizer;
+import eu.righettod.poc.sanitizer.ImageDocumentSanitizerImpl;
 
 /**
  * Servlet to receive the uploaded file.<br>
- * It verify if the uploaded document is safe and if it's OK then continue processing...<br>
+ * For Excel/Word/Pdf document: It verify if the uploaded document is safe and if it's OK then continue processing...<br>
+ * For Image: Try to sanitize the uploaded document and if it succeed to sanitize it then continue processing...<br>
  * Try to use, as much as possible, file upload feature provided by JEE >= 7
  *
  */
@@ -64,37 +67,45 @@ public class DocumentUpload extends HttpServlet {
 			}
 
 			// Write a temporary file with uploaded file
-			tmpFile = File.createTempFile("detector", null);
+			tmpFile = File.createTempFile("uploaded-", null);
 			tmpPath = tmpFile.toPath();
 			long copiedBytesCount = Files.copy(filePart.getInputStream(), tmpPath, StandardCopyOption.REPLACE_EXISTING);
 			if (copiedBytesCount != filePart.getSize()) {
 				throw new IOException(String.format("Error during stream copy to temporary disk (copied: %s / expected: %s !", copiedBytesCount, filePart.getSize()));
 			}
 
-			/* Step 2: Initialize a detector for the target file type and perform validation */
-			// Instanciate the dedicated detector implementation
+			/* Step 2: Initialize a detector/sanitizer for the target file type and perform validation */
+			// Init the safety state flag
+			boolean isSafe = false;
+
+			// Instanciate the dedicated detector/sanitizer implementation and apply detection/sanitizing
 			DocumentDetector documentDetector = null;
+			DocumentSanitizer documentSanitizer = null;
 			switch (fileType) {
 			case "PDF":
 				documentDetector = new PdfDocumentDetectorImpl();
+				isSafe = documentDetector.isSafe(tmpFile);
 				break;
 			case "WORD":
 				documentDetector = new WordDocumentDetectorImpl();
+				isSafe = documentDetector.isSafe(tmpFile);
 				break;
 			case "EXCEL":
 				documentDetector = new ExcelDocumentDetectorImpl();
+				isSafe = documentDetector.isSafe(tmpFile);
+				break;
+			case "IMAGE":
+				documentSanitizer = new ImageDocumentSanitizerImpl();
+				isSafe = documentSanitizer.madeSafe(tmpFile);
 				break;
 			default:
 				throw new IllegalArgumentException("Unknow file type specified !");
 			}
 
-			// Apply detection
-			boolean isSafe = documentDetector.isSafe(tmpFile);
-
 			/* Step 3 : Take decision based on sfa status detected */
 			// Take action is the file is not safe
 			if (!isSafe) {
-				LOG.warn("Detection of a unsafe file upload !");
+				LOG.warn("Detection of a unsafe file upload or cannot sanitize uploaded document !");
 				// Remove temporary file
 				safelyRemoveFile(tmpPath);
 				// Return error

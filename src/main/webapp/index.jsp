@@ -11,6 +11,7 @@
 			<option value="WORD">Microsoft Office Word</option>
 			<option value="EXCEL">Microsoft Office Excel</option>
 			<option value="PDF">Adobe PDF</option>
+			<option value="IMAGE">Image</option>
 		</select><br>
 		Select file to upload: <input type="file" name="fileContent" id="fileContent"><br><input type="submit" value="Upload file" name="submit">
 	</form>

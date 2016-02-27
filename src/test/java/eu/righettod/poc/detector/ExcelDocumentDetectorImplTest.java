@@ -275,6 +275,22 @@ public class ExcelDocumentDetectorImplTest {
 	}
 
 	/**
+	 * Test case for XLTM format with OLE object.
+	 * 
+	 * @throws IOException
+	 * 
+	 */
+	@Test
+	public void testUnSafeXLTMDocumentWithOLE() throws IOException {
+		// Prepare test
+		File sample = new File(SAMPLES_DIRECTORY, "test-with-ole-object.xltm");
+		// Run test
+		boolean safeState = this.victim.isSafe(sample);
+		// Validate test
+		Assert.assertFalse(safeState);
+	}
+
+	/**
 	 * Test case for XLTX format with OLE object.
 	 * 
 	 * @throws IOException

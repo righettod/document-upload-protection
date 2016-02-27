@@ -11,6 +11,9 @@ import org.slf4j.LoggerFactory;
 import com.aspose.words.Document;
 import com.aspose.words.FileFormatInfo;
 import com.aspose.words.FileFormatUtil;
+import com.aspose.words.NodeCollection;
+import com.aspose.words.NodeType;
+import com.aspose.words.Shape;
 
 /**
  * Implementation of the detector for Microsoft Word document.
@@ -29,8 +32,7 @@ public class WordDocumentDetectorImpl implements DocumentDetector {
 	 * We reject MHTML file because:<br>
 	 * <ul>
 	 * <li>API cannot detect macro into this format</li>
-	 * <li>Is not normal to use this format to represent a Word file (there
-	 * plenty of others supported format)</li>
+	 * <li>Is not normal to use this format to represent a Word file (there plenty of others supported format)</li>
 	 * </ul>
 	 */
 	private static final List<String> ALLOWED_FORMAT = Arrays.asList(new String[] { "doc", "docx", "docm", "wml", "dot", "dotm" });
@@ -40,6 +42,7 @@ public class WordDocumentDetectorImpl implements DocumentDetector {
 	 *
 	 * @see eu.righettod.poc.detector.DocumentDetector#isSafe(java.io.File)
 	 */
+	@SuppressWarnings("rawtypes")
 	@Override
 	public boolean isSafe(File f) {
 		boolean safeState = false;
@@ -53,9 +56,30 @@ public class WordDocumentDetectorImpl implements DocumentDetector {
 					Document document = new Document(f.getAbsolutePath());
 					// Get safe state from Macro presence
 					safeState = !document.hasMacros();
+					// If document is safe then we pass to OLE objects analysis
+					if (safeState) {
+						// Get all shapes of the document
+						NodeCollection shapes = document.getChildNodes(NodeType.SHAPE, true);
+						Shape shape = null;
+						// Search OLE objects in all shapes
+						int totalOLEObjectCount = 0;
+						for (int i = 0; i < shapes.getCount(); i++) {
+							shape = (Shape) shapes.get(i);
+							// Check if the current shape has OLE object
+							if (shape.getOleFormat() != null) {
+								totalOLEObjectCount++;
+							}
+						}
+						// Update safe status flag according to number of OLE object found
+						if (totalOLEObjectCount != 0) {
+							safeState = false;
+						}
+
+					}
 				}
 			}
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 			safeState = false;
 			LOG.warn("Error during Word file analysis !", e);
 		}

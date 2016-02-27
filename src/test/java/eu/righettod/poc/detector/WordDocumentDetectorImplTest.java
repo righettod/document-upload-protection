@@ -225,4 +225,132 @@ public class WordDocumentDetectorImplTest {
 		// Validate test
 		Assert.assertFalse(safeState);
 	}
+
+	/**
+	 * Test case for DOC format with OLE object.
+	 * 
+	 * @throws IOException
+	 * 
+	 */
+	@Test
+	public void testUnSafeDOCDocumentWithOLE() throws IOException {
+		// Prepare test
+		File sample = new File(SAMPLES_DIRECTORY, "test-with-ole-object.doctest-with-ole-object.doc");
+		// Run test
+		boolean safeState = this.victim.isSafe(sample);
+		// Validate test
+		Assert.assertFalse(safeState);
+	}
+
+	/**
+	 * Test case for DOCM format with OLE object.
+	 * 
+	 * @throws IOException
+	 * 
+	 */
+	@Test
+	public void testUnSafeDOCMDocumentWithOLE() throws IOException {
+		// Prepare test
+		File sample = new File(SAMPLES_DIRECTORY, "test-with-ole-object.doctest-with-ole-object.docm");
+		// Run test
+		boolean safeState = this.victim.isSafe(sample);
+		// Validate test
+		Assert.assertFalse(safeState);
+	}
+
+	/**
+	 * Test case for DOCX format with OLE object.
+	 * 
+	 * @throws IOException
+	 * 
+	 */
+	@Test
+	public void testUnSafeDOCXDocumentWithOLE() throws IOException {
+		// Prepare test
+		File sample = new File(SAMPLES_DIRECTORY, "test-with-ole-object.doctest-with-ole-object.docx");
+		// Run test
+		boolean safeState = this.victim.isSafe(sample);
+		// Validate test
+		Assert.assertFalse(safeState);
+	}
+
+	/**
+	 * Test case for DOT format with OLE object.
+	 * 
+	 * @throws IOException
+	 * 
+	 */
+	@Test
+	public void testUnSafeDOTDocumentWithOLE() throws IOException {
+		// Prepare test
+		File sample = new File(SAMPLES_DIRECTORY, "test-with-ole-object.doctest-with-ole-object.dot");
+		// Run test
+		boolean safeState = this.victim.isSafe(sample);
+		// Validate test
+		Assert.assertFalse(safeState);
+	}
+
+	/**
+	 * Test case for DOTM format with OLE object.
+	 * 
+	 * @throws IOException
+	 * 
+	 */
+	@Test
+	public void testUnSafeDOTMDocumentWithOLE() throws IOException {
+		// Prepare test
+		File sample = new File(SAMPLES_DIRECTORY, "test-with-ole-object.doctest-with-ole-object.dotm");
+		// Run test
+		boolean safeState = this.victim.isSafe(sample);
+		// Validate test
+		Assert.assertFalse(safeState);
+	}
+
+	/**
+	 * Test case for DOTX format with OLE object.
+	 * 
+	 * @throws IOException
+	 * 
+	 */
+	@Test
+	public void testUnSafeDOTXDocumentWithOLE() throws IOException {
+		// Prepare test
+		File sample = new File(SAMPLES_DIRECTORY, "test-with-ole-object.doctest-with-ole-object.dotx");
+		// Run test
+		boolean safeState = this.victim.isSafe(sample);
+		// Validate test
+		Assert.assertFalse(safeState);
+	}
+
+	/**
+	 * Test case for MTHML format with OLE object.
+	 * 
+	 * @throws IOException
+	 * 
+	 */
+	@Test
+	public void testUnSafeMTHMLDocumentWithOLE() throws IOException {
+		// Prepare test
+		File sample = new File(SAMPLES_DIRECTORY, "test-with-ole-object.doctest-with-ole-object.mht");
+		// Run test
+		boolean safeState = this.victim.isSafe(sample);
+		// Validate test
+		Assert.assertFalse(safeState);
+	}
+
+	/**
+	 * Test case for WordML format with OLE object.
+	 * 
+	 * @throws IOException
+	 * 
+	 */
+	@Test
+	public void testUnSafeWordMLDocumentWithOLE() throws IOException {
+		// Prepare test
+		File sample = new File(SAMPLES_DIRECTORY, "test-with-ole-object-word2003xml.xml");
+		// Run test
+		boolean safeState = this.victim.isSafe(sample);
+		// Validate test
+		Assert.assertFalse(safeState);
+	}
 }
