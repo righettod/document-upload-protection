@@ -1,5 +1,7 @@
 Last revision (mm/dd/yy): '''03/27/2016'''
 
+'''DRAFT'''
+
 == Introduction ==
 
 This article propose a way to protect a file upload feature against submission of file containing malicious code.
@@ -19,7 +21,7 @@ The most common file types used to transmit ''malicious code'' into file upload 
 * Images: Malicious code embedded into the file or use of binary file with image file extension.
 
 
-== Global approaches ==
+== Approaches ==
 
 Based on this context, the goals here are:
 
@@ -33,9 +35,9 @@ Remarks:
 
 == Cases ==
 
-=== Common code ===
+=== Common codes ===
 
-The following code is shared by the code snippets proposed into the rest of this article.
+The following codes are shared by the code snippets proposed into the rest of this article.
 
 Interfaces:
 
