@@ -1,0 +1,75 @@
+Last revision (mm/dd/yy): '''03/27/2016'''
+
+== Introduction ==
+
+This article propose a way to protect a file upload feature against submission of file containing malicious code.
+
+== Context ==
+
+Into web applications, when we expect upload of working documents from users, we can expose the application to submission of documents that we can categorize as ''malicious''.
+
+We use the term "malicious" here to refer to documents that embed ''malicious code'' that will be executed when another user (admin, back office operator...) will open the document with the associated application reader.
+
+Usually, when an application expect his user to upload a document, the application expect to receive a document for which the intended use will be for reading/printing/archiving. The document should not alter is content at opening time and should be in a final rendered state.
+
+The most common file types used to transmit ''malicious code'' into file upload feature are the following:
+
+* Microsoft Office document: Word/Excel using [https://en.wikipedia.org/wiki/Visual_Basic_for_Applications VBA Macro] and [https://en.wikipedia.org/wiki/Object_Linking_and_Embedding OLE package].
+* Adobe PDF document: Insert malicious code as attachment.
+* Images: Malicious code embedded into the file or use of binary file with image file extension.
+
+
+== Global approaches ==
+
+Based on this context, the goals here are:
+
+* For Word/Excel/Pdf documents: Detect when a document contains "code"/OLE package and then block upload process.
+* For Images document: Sanitize incoming image using re-writing approach and then disable/remove any "code" present (this approach also handle case in which the file sent is not an image).
+
+Remarks:
+
+* It's technically possible to perform sanitizing on Word/Excel/PDF documents but we have choosen here the option to block them in order to avoid the risk of missing any evasion technics and then let pass one evil document. The following [https://www.greyhathacker.net/?p=872 site] show how many way exists to embed Macro into a Microsoft Office documents.
+* The other reason why we have choosen the blocking way is that for Word/Excel, changing document format (for example by saving any document to DOCX/XSLX formats in order to be sure that no Macro can be executed) can have impacts or cause issues on document structure/rendering depending on the API used.
+
+== Cases ==
+
+=== Common code ===
+
+The following code is shared by the code snippets proposed into the rest of this article.
+
+Interfaces:
+
+* https://github.com/righettod/document-upload-protection/blob/master/src/main/java/eu/righettod/poc/detector/DocumentDetector.java
+* https://github.com/righettod/document-upload-protection/blob/master/src/main/java/eu/righettod/poc/sanitizer/DocumentSanitizer.java
+
+=== Case n°1: Word / Excel ===
+
+The reason why Aspose API have been used here are the following:
+
+* There many way to embed Macro into a Microsoft Office document and, instead of manually support all the way that exists on the wild (they evolve every days), we prefer to use features from a company that perform R&D on these formats, precisely DOC and XLS native format that are proprietary.
+* The open source API POI for [https://poi.apache.org/overview.html DOC native format is limited].
+* The open source API JEXCELAPI for XLS native format is not often maintained (last publishing date from [https://sourceforge.net/projects/jexcelapi/files/jexcelapi/ 2009]).
+* Trial version of the APIs can be used for detection only and it's seems that there not license limitation about this type of [http://www.aspose.com/community/forums/thread/335727/what-are-the-trial-limitation-of-aspose.words.net.aspx specific usage].
+
+Detector for Word document:
+
+* https://github.com/righettod/document-upload-protection/blob/master/src/main/java/eu/righettod/poc/detector/WordDocumentDetectorImpl.java
+
+Detector for Excel document:
+
+* https://github.com/righettod/document-upload-protection/blob/master/src/main/java/eu/righettod/poc/detector/WordDocumentDetectorImpl.java
+
+
+=== Case n°2: PDF ===
+
+Detector for PDF document:
+
+* https://github.com/righettod/document-upload-protection/blob/master/src/main/java/eu/righettod/poc/detector/PdfDocumentDetectorImpl.java
+
+
+=== Case n°3: Images ===
+
+Sanitizer for Images files:
+
+* https://github.com/righettod/document-upload-protection/blob/master/src/main/java/eu/righettod/poc/sanitizer/ImageDocumentSanitizerImpl.java
+
