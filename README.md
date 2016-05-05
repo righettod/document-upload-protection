@@ -2,7 +2,7 @@
 
 POC in order to protect an document upload application feature against "malicious" document submission.
 
-It's part of a current work with OWASP Java folks in order to create an [article](https://github.com/righettod/document-upload-protection/blob/master/draft-article.txt) on OWASP Wiki about this topic.
+It's part of a current work with OWASP Java folks in order to create an [article](https://www.owasp.org/index.php/Protect_FileUpload_Against_Malicious_File) on OWASP Wiki about this topic.
 
 # Note about dependencies not present into Maven repositories
 
