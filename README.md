@@ -2,7 +2,7 @@
 
 POC in order to protect an document upload application feature against "malicious" document submission.
 
-It's part of a current work with OWASP Java folks in order to create an [article](https://www.owasp.org/index.php/Protect_FileUpload_Against_Malicious_File) on OWASP Wiki about this topic.
+It's the code repository if this OWASP [article](https://www.owasp.org/index.php/Protect_FileUpload_Against_Malicious_File).
 
 # Note about dependencies not present into Maven repositories
 
@@ -17,28 +17,6 @@ Before to launch a build or execution of the POC, use the script **install-non-m
 2) Use the following URL to acces to upload form and use the POC:
 
 `http://localhost:9090`
-
-# Context
-
-Into web applications when we expect, from our users, upload of working documents, we can expose our application to submission of documents that we can categorize as "malicious".
-
-We use the term "malicious" here to refer to documents that embed "malicious code" that will be executed when an user will open the document with the associated reader (Word, Excel, Acrobat Reader, Image reader...).
-
-Usually, when an application expect is user to upload a document, the application expect to receive a simple document for which the intended use will be for reading/printing/archiving. The document should not alter is content at opening time.
-
-# Goal
-
-Based on this context, the goals here are:
-
-* For Word/Excel/Pdf documents: To detect when a document contains "code" and then block upload process,
-
-* For Images document: To sanitize incoming image using re-writing approach and then disable/remove the "code".
-
-**Remarks:** 
-
-* It's technically possible to perform sanitizing on Word/Excel/Pdf documents but we have choosen the option to block them in order to avoid the risk of missing any evasion technics and then let pass one evil document :cold_sweat:
-
-* The other reason why we have choosen the blocking way is that for Word/Excel, changing document format (for example by saving any document to DOCX/XSLX formats in order to be sure that no Macro can/will be executed) can have impacts or cause issues on document structure/rendering depending on the API used. Here, we use the trial version of Aspose that is OK for detection but will force you to buy license if you want to alter documents (see links and notes at the end of this file) and we want to avoid that.   
 
 # Format supported
 
