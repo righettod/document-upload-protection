@@ -1,0 +1,11 @@
+language: java
+sudo: false
+jdk:
+  - oraclejdk8
+  - openjdk8
+before_script: 
+  - chmod +x install-non-maven-deps.sh
+  - ./install-non-maven-deps.sh
+script: 
+  - mvn clean test
+

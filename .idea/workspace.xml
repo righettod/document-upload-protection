@@ -1,38 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efc0a431-222c-4575-8055-d975cfe2accc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/.jsdtscope" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.container" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.validation.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eu/righettod/poc/web/DocumentUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eu/righettod/poc/web/DocumentUpload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/ExcelDocumentDetectorImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/ExcelDocumentDetectorImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/PdfDocumentDetectorImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/PdfDocumentDetectorImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/WordDocumentDetectorImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/WordDocumentDetectorImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/powerpoint/test-with-ole-object.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.pot" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.pot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.potx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.potx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.pps" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.pps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.ppsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.ppsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.ppt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.ppt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.pptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="efc0a431-222c-4575-8055-d975cfe2accc" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,47 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="PowerpointDocumentDetectorImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eu/righettod/poc/detector/PowerpointDocumentDetectorImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PowerpointDocumentDetectorImplTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/PowerpointDocumentDetectorImplTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="674">
-              <caret line="324" column="49" selection-start-line="324" selection-start-column="49" selection-end-line="324" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DocumentUpload.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eu/righettod/poc/web/DocumentUpload.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1917">
-              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -474,7 +403,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="0" width="1842" height="1200" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="2" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3298969" />
@@ -483,10 +411,10 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.52628696" side_tool="true" weight="0.3293578" />
       <window_info id="Maven Projects" order="5" weight="0.32968238" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.33645737" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.47371304" visible="true" weight="0.1826742" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.47371304" weight="0.1826742" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17572062" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20454545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="3" />
@@ -505,14 +433,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/eu/righettod/poc/detector/PowerpointDocumentDetectorImpl.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager>
@@ -550,10 +470,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eu/righettod/poc/detector/PowerpointDocumentDetectorImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/righettod/poc/web/DocumentUpload.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="225">
+          <caret line="114" column="65" lean-forward="true" selection-start-line="114" selection-start-column="65" selection-end-line="114" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -567,17 +494,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/righettod/poc/detector/PowerpointDocumentDetectorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eu/righettod/poc/web/DocumentUpload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1917">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        <state relative-caret-position="667">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
         </state>
       </provider>
     </entry>
