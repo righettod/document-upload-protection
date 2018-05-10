@@ -42,12 +42,6 @@ The reason why Aspose API have been used into this POC are the following:
 
 * The open source API JEXCELAPI for XLS native format is not often maintained (last publishing on Maven repository date from 27-Nov-2012).
 
-* Trial version of the APIs can be used for detection only and it's seems that there not license limitation about this type of specific usage (see links below and don't hesitate to ping me if i'm wrong  :smiley: ).
-
 # Information links
-
-* http://www.aspose.com/community/forums/thread/335727/what-are-the-trial-limitation-of-aspose.words.net.aspx
-
-* http://www.aspose.com/docs/display/wordsreportingservices/Evaluation+Version+Limitations
 
 * https://www.greyhathacker.net/?p=872
