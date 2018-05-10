@@ -22,19 +22,21 @@ Before to launch a build or execution of the POC, use the script **install-non-m
 
 We will focus our work on the following formats because it's the formats that are often used as attack vector and also to transmit legit information: 
 
-* Microsoft Word document (from 97 to 2013),
+* Microsoft Word document (from 97 to 2016),
 
-* Microsoft Excel document (from 97 to 2013),
+* Microsoft Excel document (from 97 to 2016),
+
+* Microsoft Powerpoint document (from 97 to 2016),
 
 * Adobe Pdf document,
 
 * Image document (formats supported by the IJ API: http://rsb.info.nih.gov/ij/developer/api).
 
-# Note on Word/Excel API
+# Note on Word/Excel/Powerpoint API
 
 The reason why Aspose API have been used into this POC are the following:
 
-* There many way to embed Macro into a Microsoft Office document and, instead of manually support all the way that exists on the wild (they evolve every days), we prefer to use features from a company that perform R&D on these formats, precisely DOC and XLS native format that are proprietary. 
+* There many way to embed Macro into a Microsoft Office document and, instead of manually support all the way that exists on the wild (they evolve every days), we prefer to use features from a company that perform R&D on these formats, precisely DOC/XLS/PPT native formats that are proprietary. 
 
 * The open source API POI for DOC native format is not very stable.
 
@@ -49,9 +51,3 @@ The reason why Aspose API have been used into this POC are the following:
 * http://www.aspose.com/docs/display/wordsreportingservices/Evaluation+Version+Limitations
 
 * https://www.greyhathacker.net/?p=872
-
-# Online tools links
-
-* http://regex.info/exif.cgi
-
-* http://thexifer.net/

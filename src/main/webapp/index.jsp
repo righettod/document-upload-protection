@@ -10,6 +10,7 @@
 		<select id="fileType" name="fileType">
 			<option value="WORD">Microsoft Office Word</option>
 			<option value="EXCEL">Microsoft Office Excel</option>
+			<option value="POWERPOINT">Microsoft Office Powerpoint</option>
 			<option value="PDF">Adobe PDF</option>
 			<option value="IMAGE">Image</option>
 		</select><br>

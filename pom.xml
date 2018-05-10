@@ -26,6 +26,11 @@
 			<artifactId>aspose-words</artifactId>
 			<version>16.1.0</version>
 		</dependency>
+        <dependency>
+            <groupId>aspose.com</groupId>
+            <artifactId>aspose-slides</artifactId>
+            <version>18.4.0</version>
+        </dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>

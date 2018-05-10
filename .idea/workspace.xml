@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="efc0a431-222c-4575-8055-d975cfe2accc" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/.jsdtscope" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.container" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.validation.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eu/righettod/poc/web/DocumentUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eu/righettod/poc/web/DocumentUpload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/ExcelDocumentDetectorImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/ExcelDocumentDetectorImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/PdfDocumentDetectorImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/PdfDocumentDetectorImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/WordDocumentDetectorImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/WordDocumentDetectorImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/powerpoint/test-with-ole-object.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.pot" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.pot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.potx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.potx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.pps" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.pps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.ppsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.ppsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.ppt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.ppt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/powerpoint/test-without-macro.xml" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="PowerpointDocumentDetectorImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eu/righettod/poc/detector/PowerpointDocumentDetectorImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PowerpointDocumentDetectorImplTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/PowerpointDocumentDetectorImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="674">
+              <caret line="324" column="49" selection-start-line="324" selection-start-column="49" selection-end-line="324" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DocumentUpload.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eu/righettod/poc/web/DocumentUpload.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1917">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>@throws IOException</find>
+      <find>throws IOException</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/WordDocumentDetectorImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/ExcelDocumentDetectorImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/PdfDocumentDetectorImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/righettod/poc/detector/PowerpointDocumentDetectorImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/PowerpointDocumentDetectorImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/righettod/poc/web/DocumentUpload.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../Apache-maven-3.1.0" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_HOME" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-92" />
+    <option name="y" value="-20" />
+    <option name="width" value="1920" />
+    <option name="height" value="1200" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="poc-document-upload-protection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="document-upload-protection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-document-upload-protection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="document-upload-protection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-document-upload-protection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="document-upload-protection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-document-upload-protection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="document-upload-protection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-document-upload-protection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="document-upload-protection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="poc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-document-upload-protection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="document-upload-protection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="poc" type="462c0819:PsiDirectoryNode" />
+              <item name="detector" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-document-upload-protection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="document-upload-protection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="poc" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-document-upload-protection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="document-upload-protection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-document-upload-protection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="document-upload-protection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-document-upload-protection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="document-upload-protection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-document-upload-protection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="document-upload-protection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="poc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-document-upload-protection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="document-upload-protection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="poc" type="462c0819:PsiDirectoryNode" />
+              <item name="detector" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poc-document-upload-protection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="document-upload-protection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.PowerpointDocumentDetectorImplTest">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="PowerpointDocumentDetectorImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poc-document-upload-protection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eu.righettod.poc.detector.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="eu.righettod.poc.detector" />
+      <option name="MAIN_CLASS_NAME" value="eu.righettod.poc.detector.PowerpointDocumentDetectorImplTest" />
+      <option name="METHOD_NAME" value="testSafePOTMDocument" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="PowerpointDocumentDetectorImplTest.testSafePOTMDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poc-document-upload-protection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eu.righettod.poc.detector.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="eu.righettod.poc.detector" />
+      <option name="MAIN_CLASS_NAME" value="eu.righettod.poc.detector.PowerpointDocumentDetectorImplTest" />
+      <option name="METHOD_NAME" value="testSafePOTMDocument" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="PowerpointDocumentDetectorImplTest.testSafePPSMDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poc-document-upload-protection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eu.righettod.poc.detector.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="eu.righettod.poc.detector" />
+      <option name="MAIN_CLASS_NAME" value="eu.righettod.poc.detector.PowerpointDocumentDetectorImplTest" />
+      <option name="METHOD_NAME" value="testSafePPSMDocument" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="PowerpointDocumentDetectorImplTest.testUnSafePOTDocumentWithOLE" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poc-document-upload-protection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eu.righettod.poc.detector.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="eu.righettod.poc.detector" />
+      <option name="MAIN_CLASS_NAME" value="eu.righettod.poc.detector.PowerpointDocumentDetectorImplTest" />
+      <option name="METHOD_NAME" value="testUnSafePOTDocumentWithOLE" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="PowerpointDocumentDetectorImplTest.testUnSafePOTMDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="poc-document-upload-protection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eu.righettod.poc.detector.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="eu.righettod.poc.detector" />
+      <option name="MAIN_CLASS_NAME" value="eu.righettod.poc.detector.PowerpointDocumentDetectorImplTest" />
+      <option name="METHOD_NAME" value="testUnSafePOTMDocument" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.PowerpointDocumentDetectorImplTest.testSafePOTMDocument" />
+      <item itemvalue="JUnit.PowerpointDocumentDetectorImplTest" />
+      <item itemvalue="JUnit.PowerpointDocumentDetectorImplTest.testSafePPSMDocument" />
+      <item itemvalue="JUnit.PowerpointDocumentDetectorImplTest.testUnSafePOTMDocument" />
+      <item itemvalue="JUnit.PowerpointDocumentDetectorImplTest.testUnSafePOTDocumentWithOLE" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PowerpointDocumentDetectorImplTest" />
+        <item itemvalue="JUnit.PowerpointDocumentDetectorImplTest.testUnSafePOTDocumentWithOLE" />
+        <item itemvalue="JUnit.PowerpointDocumentDetectorImplTest.testUnSafePOTMDocument" />
+        <item itemvalue="JUnit.PowerpointDocumentDetectorImplTest.testSafePPSMDocument" />
+        <item itemvalue="JUnit.PowerpointDocumentDetectorImplTest.testSafePOTMDocument" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="efc0a431-222c-4575-8055-d975cfe2accc" name="Default" comment="" />
+      <created>1525934155930</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1525934155930</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="PowerpointDocumentDetectorImplTest_testSafePOTDocument - 2018.05.10 at 09h 00m 39s.xml">
+      <configuration name="PowerpointDocumentDetectorImplTest.testSafePOTDocument" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PowerpointDocumentDetectorImplTest_testSafePOTMDocument - 2018.05.10 at 09h 01m 45s.xml">
+      <configuration name="PowerpointDocumentDetectorImplTest.testSafePOTMDocument" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PowerpointDocumentDetectorImplTest - 2018.05.10 at 09h 04m 27s.xml">
+      <configuration name="PowerpointDocumentDetectorImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PowerpointDocumentDetectorImplTest_testSafePPSMDocument - 2018.05.10 at 09h 12m 25s.xml">
+      <configuration name="PowerpointDocumentDetectorImplTest.testSafePPSMDocument" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PowerpointDocumentDetectorImplTest - 2018.05.10 at 09h 20m 08s.xml">
+      <configuration name="PowerpointDocumentDetectorImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PowerpointDocumentDetectorImplTest - 2018.05.10 at 09h 21m 48s.xml">
+      <configuration name="PowerpointDocumentDetectorImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PowerpointDocumentDetectorImplTest_testUnSafePOTMDocument - 2018.05.10 at 09h 25m 14s.xml">
+      <configuration name="PowerpointDocumentDetectorImplTest.testUnSafePOTMDocument" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PowerpointDocumentDetectorImplTest - 2018.05.10 at 09h 25m 35s.xml">
+      <configuration name="PowerpointDocumentDetectorImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PowerpointDocumentDetectorImplTest_testUnSafePOTDocumentWithOLE - 2018.05.10 at 09h 31m 13s.xml">
+      <configuration name="PowerpointDocumentDetectorImplTest.testUnSafePOTDocumentWithOLE" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PowerpointDocumentDetectorImplTest - 2018.05.10 at 09h 34m 43s.xml">
+      <configuration name="PowerpointDocumentDetectorImplTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="78" y="0" width="1842" height="1200" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="2" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.3298969" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.47371304" weight="0.3293578" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.52628696" side_tool="true" weight="0.3293578" />
+      <window_info id="Maven Projects" order="5" weight="0.32968238" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.33645737" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.47371304" visible="true" weight="0.1826742" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17572062" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Ant Build" order="6" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.24482109" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3293578" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/eu/righettod/poc/detector/PowerpointDocumentDetectorImpl.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="presentation.getVbaProject() " />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/righettod/poc/detector/WordDocumentDetectorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="17" selection-start-line="17" selection-end-line="21" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/ExcelDocumentDetectorImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="229" selection-start-line="229" selection-end-line="229" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/PdfDocumentDetectorImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="37" column="4" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/WordDocumentDetectorImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="202" column="5" lean-forward="true" selection-start-line="191" selection-start-column="4" selection-end-line="202" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/righettod/poc/detector/PowerpointDocumentDetectorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/eu/righettod/poc/detector/PowerpointDocumentDetectorImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="674">
+          <caret line="324" column="49" selection-start-line="324" selection-start-column="49" selection-end-line="324" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/righettod/poc/web/DocumentUpload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1917">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
