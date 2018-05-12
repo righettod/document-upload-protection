@@ -7,5 +7,5 @@ before_install:
   - chmod +x install-non-maven-deps.sh
   - ./install-non-maven-deps.sh
 script: 
-  - mvn -Djava.awt.headless=true clean test
+  - mvn clean test
 
