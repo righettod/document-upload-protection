@@ -8,6 +8,10 @@ It's the code repository if this OWASP [article](https://www.owasp.org/index.php
 
 Before to launch a build or execution of the POC, use the script **install-non-maven-deps.bat** to install dependencies into your local Maven cache.
 
+# Build status
+
+[![Build Status](https://travis-ci.org/righettod/document-upload-protection.svg?branch=master)](https://travis-ci.org/righettod/document-upload-protection)
+
 # Run the POC
 
 1) Use the maven command below to run the web container:
