@@ -2,7 +2,7 @@
 
 POC in order to protect an document upload application feature against "malicious" document submission.
 
-It's the code repository if this OWASP [article](https://www.owasp.org/index.php/Protect_FileUpload_Against_Malicious_File). 
+It's the code repository of this OWASP [article](https://www.owasp.org/index.php/Protect_FileUpload_Against_Malicious_File). 
 
 # Note about dependencies not present into Maven repositories
 
