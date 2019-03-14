@@ -4,6 +4,7 @@ import org.apache.commons.imaging.ImageInfo;
 import org.apache.commons.imaging.ImageParser;
 import org.apache.commons.imaging.Imaging;
 import org.apache.commons.imaging.formats.bmp.BmpImageParser;
+import org.apache.commons.imaging.formats.dcx.DcxImageParser;
 import org.apache.commons.imaging.formats.gif.GifImageParser;
 import org.apache.commons.imaging.formats.pcx.PcxImageParser;
 import org.apache.commons.imaging.formats.png.PngImageParser;
@@ -121,7 +122,7 @@ public class ImageDocumentSanitizerImpl implements DocumentSanitizer {
                                 break;
                             }
                             case "DCX": {
-                                imageParser = new PcxImageParser();
+                                imageParser = new DcxImageParser();
                                 break;
                             }
                             case "BMP": {
